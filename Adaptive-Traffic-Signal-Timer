@@ -1,0 +1,179 @@
+{
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/Pranalideokate/Apriori/blob/main/Adaptive-Traffic-Signal-Timer\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "QnUqojXVUGkr"
+      },
+      "outputs": [],
+      "source": [
+        "!git clone https://github.com/mihir-m-gandhi/Adaptive-Traffic-Signal-Timer.git\n"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "OveXE4IzU3ty"
+      },
+      "outputs": [],
+      "source": [
+        "!pip install yolov5"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "fey67p7iUQCc"
+      },
+      "outputs": [],
+      "source": [
+        "!pip install jupyterlab"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "83W5eQcAUpB_"
+      },
+      "outputs": [],
+      "source": [
+        "%cd Adaptive-Traffic-Signal-Timer/Code/YOLO/darkflow"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "ewkxuitzUvVy"
+      },
+      "outputs": [],
+      "source": [
+        "!pip install -r requirements.txt"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "CNF4NgmnUyiR"
+      },
+      "outputs": [],
+      "source": [
+        "!python setup.py build_ext --inplace"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!git clone https://github.com/pjreddie/darknet\n",
+        "!cd darknet\n",
+        "!make"
+      ],
+      "metadata": {
+        "id": "OyouAPUuAseC"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!wget https://pjreddie.com/media/files/yolov2.weights\n"
+      ],
+      "metadata": {
+        "id": "63QdBy-yA9_5"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "nzuaH1dbAzjE"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "f8HPbfXqU2tQ"
+      },
+      "outputs": [],
+      "source": [
+        "!python vehicle_detection.py"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!pip install pygame"
+      ],
+      "metadata": {
+        "id": "PcbjqSRKK2K_"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "!python simulation.py\n"
+      ],
+      "metadata": {
+        "id": "-RXTl93QJahr"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        ""
+      ],
+      "metadata": {
+        "id": "tSl4Neb4Jd5H"
+      },
+      "execution_count": null,
+      "outputs": []
+    }
+  ],
+  "metadata": {
+    "colab": {
+      "collapsed_sections": [],
+      "name": "Untitled17.ipynb",
+      "private_outputs": true,
+      "provenance": [],
+      "authorship_tag": "ABX9TyNHf6qjWUs1V70gRH93pYj6",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "display_name": "Python 3",
+      "name": "python3"
+    },
+    "language_info": {
+      "name": "python"
+    },
+    "accelerator": "GPU"
+  },
+  "nbformat": 4,
+  "nbformat_minor": 0
+}
